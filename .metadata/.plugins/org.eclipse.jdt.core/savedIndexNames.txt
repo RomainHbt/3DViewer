@@ -24,4 +24,3 @@ INDEX VERSION 1.126+/Users/romainhembert/Documents/DevApp/3DViewer/.metadata/.pl
 3302703152.index
 2399042292.index
 3394953001.index
-3044365544.index
