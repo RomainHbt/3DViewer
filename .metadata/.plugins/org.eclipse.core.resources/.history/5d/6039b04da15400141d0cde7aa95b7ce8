@@ -24,7 +24,9 @@ public class FaceTest {
 		
 		Point bary = f.getBarycentre();
 		
-		assertEquals(bary.toString(), res.toString());
+		assertEquals(bary.getX(), res.getX());
+		assertEquals(bary.getY(), res.getY());
+		assertEquals(bary.getZ(), res.getZ());
 		
 	}
 

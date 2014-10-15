@@ -8,6 +8,7 @@ import org.junit.Test;
 
 public class FaceTest {
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testBarycentre() {
 		Point res = new Point(2.0, 2.0, 2.0);
@@ -24,7 +25,9 @@ public class FaceTest {
 		
 		Point bary = f.getBarycentre();
 		
-		assertEquals(bary.toString(), res.toString());
+		assertEquals(bary.getX(), res.getX());
+		assertEquals(bary.getY(), res.getY());
+		assertEquals(bary.getZ(), res.getZ());
 		
 	}
 

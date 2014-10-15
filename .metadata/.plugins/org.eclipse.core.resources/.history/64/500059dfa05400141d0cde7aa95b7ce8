@@ -22,10 +22,7 @@ public class FaceTest {
 		
 		Face f = new Face(s1, s2, s3, 1);
 		
-		Point bary = f.getBarycentre();
-		
-		assertEquals(bary.toString(), res.toString());
-		
+		assertEquals(f.getBarycentre(), res);
 	}
 
 }
