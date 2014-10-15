@@ -1,0 +1,48 @@
+package maths_classes;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
+
+public class Face {
+	private Segment s1, s2, s3;
+	private Set<Point> points;
+	private int nom;
+	
+	public Face(Segment s1, Segment s2, Segment s3, int nom){
+		this.s1 = s1;
+		this.s2 = s2;
+		this.s3 = s3;
+		this.nom = nom;
+		
+		points = new HashSet<Point>();
+		points.add(s1.getP1());
+		points.add(s1.getP2());
+		points.add(s2.getP1());
+		points.add(s2.getP2());
+		points.add(s3.getP1());
+		points.add(s3.getP2());
+	}
+	
+	/**
+	 * Calcule le barycentre de la face
+	 * @return un point representant le barycentre de la face
+	 */
+	public Point getBarycentre(){
+		double x = 0;
+		double y = 0;
+		double z = 0;
+		
+		Iterator i = points.iterator();
+		
+		while(i.hasNext()){
+			Point tmp = (Point) i.next();
+			x += tmp.getX();
+			y += tmp.getY();
+			z += tmp.getZ();
+			
+		}
+		
+		return new Point(x/3, y/3, z/3);
+	}
+}

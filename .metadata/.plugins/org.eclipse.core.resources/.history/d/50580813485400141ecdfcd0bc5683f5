@@ -1,0 +1,9 @@
+package maths_classes;
+
+public class Point {
+	double x, y, z;
+	
+	public Point(double x, double y, double z){
+		
+	}
+}

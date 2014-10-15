@@ -1,0 +1,20 @@
+package tests;
+import maths_classes.Point;
+import maths_classes.Segment;
+
+import org.junit.Test;
+
+public class FaceTest {
+
+	@Test
+	public void testBarycentre() {
+		Point p1 = new Point(1, 1, 1);
+		Point p2 = new Point(1, 1, 1);
+		Point p3 = new Point(1, 1, 1);
+		
+		Segment s1 = new Segment(p1, p2);
+		Segment s2 = new Segment(p1, p3);
+		Segment s3 = new Segment(p2, p3);
+	}
+
+}

@@ -1,0 +1,24 @@
+package maths_classes;
+
+public class Point {
+	double x, y, z;
+	
+	/**
+	 * Constructeur d'un point avec ses coordonnees
+	 * @param x Axe des x
+	 * @param y Axe des y
+	 * @param z Axe des z
+	 */
+	public Point(double x, double y, double z){
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
+	
+	/**
+	 * Retourne une chaine de caractere avec les coordonnes des points
+	 */
+	public String toString(){
+		return "("+x+", "+y+", "+z+")";
+	}
+}

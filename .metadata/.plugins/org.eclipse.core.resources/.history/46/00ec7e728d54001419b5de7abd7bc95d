@@ -1,0 +1,22 @@
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class Main {
+
+	public static JFrame f;
+
+	public static void main(String[] args) {
+		f = new JFrame();
+
+		JPanel panel1 = new NbColor();
+		f.setTitle("GrisColory");
+		f.setResizable(false);
+		f.setLocationRelativeTo(null);
+		f.getContentPane().add(panel1);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.pack();
+		f.setVisible(true);
+
+	}
+
+}
