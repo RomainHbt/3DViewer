@@ -1,0 +1,72 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import java.awt.Color;
+
+
+
+public class panelSave extends JFrame{
+
+	JButton browse = new JButton();
+	JPanel pan = new JPanel();
+	JTextField jTf1 = new JTextField();
+	JTextField jTf2 = new JTextField();
+	JTextField jTf3 = new JTextField();
+	JLabel jL1 = new JLabel();
+	JLabel jL2 = new JLabel();
+	JLabel jL3 = new JLabel();
+	
+	public panelSave() {
+	//setBounds(0, 0, 300, 200);
+	setVisible(true);
+	setResizable(false);
+	setTitle("savePanel");
+	setSize(400, 250);
+	setLocationRelativeTo(null);
+	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	setContentPane(pan);	
+	setLayout(null); 
+	pan.setBackground(Color.white);
+	
+	jL1.setBounds(25, 5, 50, 30);
+	jL1.setText("Nom :");
+	pan.add(jL1);
+	
+	jTf1.setBounds(25, 30, 350, 25);
+	jTf1.getText();
+	pan.add(jTf1);
+	
+	jL2.setBounds(25, 50, 100, 50);
+	jL2.setText("Description :");
+	pan.add(jL2);
+	
+	
+	jTf2.setBounds(25, 85, 350, 25);
+	jTf2.getText();
+	pan.add(jTf2);
+	
+	jL3.setBounds(25, 105, 100, 50);
+	jL3.setText("Mot Clé :");
+	pan.add(jL3);
+	
+	jTf3.setBounds(25, 140, 350, 25);
+	jTf3.getText();
+	pan.add(jTf3);
+	
+	browse.setBounds(155, 180, 90, 25);
+	browse.setText("Valider");
+	pan.add(browse);
+
+	
+	}
+
+	  public static void main(String[] args){
+		 
+		  panelSave pS = new panelSave();
+		        
+	  }
+	}
+
